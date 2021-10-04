@@ -184,10 +184,6 @@ h3 {
         padding-bottom: 0.75em;
     }
 
-    .join-community-section {
-        padding-top: 1em;
-    }
-
     .join-community-section p {
         font-size: 1em;
         padding-bottom: 0;
@@ -208,6 +204,5 @@ h3 {
 
     .why-us-section {
         border-radius: 0 0 var(--border-radius) 0;
-        padding-bottom: 1em;
     }
 }
