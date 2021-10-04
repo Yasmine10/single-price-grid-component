@@ -86,9 +86,8 @@ h3 {
 
 /* main  */
 
-main .component {
+main {
     background-color: var(--clr-cyan);
-
     width: min(80%, 40rem);
     height: 100vh;
     margin: 0 auto;
@@ -98,10 +97,13 @@ main .component {
     justify-content: center;
 }
 
+.component {
+    box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+}
+
 .join-community-section {
     background-color: var(--clr-white);
     border-radius: var(--border-radius) var(--border-radius) 0 0;
-    box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
 }
 
 .join-community-section p {
@@ -171,16 +173,16 @@ main .component {
 
 @media only screen and (min-width: 550px) {
     .padding-alround {
-        padding: 2.5em;
+        padding: 2em;
     }
 
-    h1 {
+    /* h1 {
         font-size: 1.5em;
     }
 
     h3 {
         font-size: 1.15em;
-    }
+    } */
 
     .join-community-section p {
         font-size: 1em;
