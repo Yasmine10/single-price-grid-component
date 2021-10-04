@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 
 :root {
+    /* colors */
     --clr-primary-cyan: hsl(179, 62%, 43%);
     --clr-primary-yellow: hsl(71, 73%, 54%);
     --clr-neutral-light-gray: hsl(204, 43%, 93%);
     --clr-neutral-grayish-blue: hsl(218, 22%, 67%);
-
     --clr-white: hsl(0, 0%, 100%);
 
+    /* font stuff */
     --ff-primary: "Karla", sans-serif;
-
     --fw-regular: 400;
     --fw-bold: 700;
 
+    /* utility custom prop */
     --border-radius: 5px;
 }
 
@@ -71,12 +72,6 @@ h1 {
 }
 
 h2 {
-    color: var(--clr-neutral-light-gray);
-    font-size: 1.125em;
-    padding-bottom: 1em;
-}
-
-h3 {
     display: block;
     color: var(--clr-primary-yellow);
     font-size: 0.9375em;
@@ -84,9 +79,15 @@ h3 {
     padding-bottom: 1.25em;
 }
 
+h3 {
+    color: var(--clr-neutral-light-gray);
+    font-size: 1.125em;
+    padding-bottom: 1em;
+}
+
 /* main  */
 
-main {
+.component {
     background-color: var(--clr-cyan);
     width: min(80%, 40rem);
     height: 100vh;
@@ -97,13 +98,10 @@ main {
     justify-content: center;
 }
 
-.component {
-    box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
-}
-
 .join-community-section {
     background-color: var(--clr-white);
     border-radius: var(--border-radius) var(--border-radius) 0 0;
+    box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
 }
 
 .join-community-section p {
@@ -117,6 +115,7 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
 }
 
 .subscription-section {
@@ -137,7 +136,7 @@ main {
 
 .subscription-section .pricing .period {
     font-weight: var(--fw-regular);
-    opacity: 0.5;
+    opacity: 0.7;
     padding-left: 0.75em;
     padding-bottom: 0.35rem;
 }
@@ -173,19 +172,12 @@ main {
 
 @media only screen and (min-width: 550px) {
     .padding-alround {
-        padding: 2em;
+        padding: 2.3em;
     }
-
-    /* h1 {
-        font-size: 1.5em;
-    }
-
-    h3 {
-        font-size: 1.15em;
-    } */
 
     .join-community-section p {
         font-size: 1em;
+        padding-bottom: 0;
     }
 
     .more-info-wrapper {
