@@ -112,17 +112,6 @@ main .component {
     flex-direction: column;
 }
 
-@media only screen and (min-width: 550px) {
-    .more-info-wrapper {
-        flex-direction: row;
-    }
-
-    .subscription-section,
-    .why-us-section {
-        flex-basis: 50%;
-    }
-}
-
 .subscription-section {
     background-color: var(--clr-primary-cyan);
     color: var(--clr-white);
@@ -153,6 +142,7 @@ main .component {
 
 .why-us-section {
     background-color: hsla(179, 62%, 43%, 0.75);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
 .why-us-section ul {
@@ -163,7 +153,7 @@ main .component {
     color: var(--clr-white);
     font-size: 0.8125em;
     line-height: 1.5em;
-    opacity: 0.65;
+    opacity: 0.7;
 }
 
 .attribution {
@@ -172,4 +162,39 @@ main .component {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 550px) {
+    .padding-alround {
+        padding: 2.5em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.15em;
+    }
+
+    .join-community-section p {
+        font-size: 1em;
+    }
+
+    .more-info-wrapper {
+        flex-direction: row;
+    }
+
+    .subscription-section,
+    .why-us-section {
+        flex-basis: 50%;
+    }
+
+    .subscription-section {
+        border-radius: 0 0 0 var(--border-radius);
+    }
+
+    .why-us-section {
+        border-radius: 0 0 var(--border-radius) 0;
+    }
 }
