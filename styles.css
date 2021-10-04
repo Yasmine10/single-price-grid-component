@@ -51,6 +51,11 @@ body {
     color: var(--clr-white);
 }
 
+.btn-primary:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-primary-yellow);
+}
+
 /* utility */
 
 .padding-alround {
